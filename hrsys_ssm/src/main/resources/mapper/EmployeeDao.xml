@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace 必须指向 Mapper 接口的全路径 -->
+<mapper namespace="com.fdk.hrsys.dao.EmployeeDao">
+
+    <!-- id 必须和接口里的方法名 findAll 一致 -->
+    <!-- resultType 指向实体类的全路径 -->
+    <select id="findAll" resultType="com.fdk.hrsys.entity.Employee">
+        SELECT * FROM employee
+    </select>
+
+</mapper>
