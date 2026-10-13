@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fdk.hrsys.dao.EmployeeDao">
+
+    <!-- 结果映射：把查询结果封装成 Employee，并用 association 嵌套封装 Department -->
+    <resultMap id="employeeMap" type="com.fdk.hrsys.entity.Employee">
+        <id property="id" column="id"/>
+        <result property="number" column="number"/>
+        <result property="name" column="name"/>
+        <result property="gender" column="gender"/>
+        <result property="age" column="age"/>
+        <!-- 关联部门对象：d_ 开头的列是 department 表的别名 -->
+        <association property="dep" javaType="com.fdk.hrsys.entity.Department">
+            <id property="id" column="d_id"/>
+            <result property="name" column="d_name"/>
+            <result property="number" column="d_number"/>
+        </association>
+    </resultMap>
+
+    <!-- 组合查询：编号、姓名、性别、年龄任意组合，空条件查全部 -->
+    <select id="search" resultMap="employeeMap">
+        SELECT e.id, e.number, e.name, e.gender, e.age,
+               d.id AS d_id, d.name AS d_name, d.number AS d_number
+        FROM employee e
+        LEFT JOIN department d ON e.dep_id = d.id
+        <where>
+            <if test="number != null and number != ''">
+                AND e.number = #{number}
+            </if>
+            <if test="name != null and name != ''">
+                AND e.name LIKE CONCAT('%', #{name}, '%')
+            </if>
+            <if test="gender != null and gender != ''">
+                AND e.gender = #{gender}
+            </if>
+            <if test="age != null">
+                AND e.age = #{age}
+            </if>
+        </where>
+    </select>
+
+    <!-- 按 id 查询员工（含部门） -->
+    <select id="searchById" resultMap="employeeMap">
+        SELECT e.id, e.number, e.name, e.gender, e.age,
+               d.id AS d_id, d.name AS d_name, d.number AS d_number
+        FROM employee e
+        LEFT JOIN department d ON e.dep_id = d.id
+        WHERE e.id = #{id}
+    </select>
+
+    <!-- 新增员工：dep_id 取部门对象的 id -->
+    <insert id="add" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO employee
+        (number, name, gender, age, dep_id)
+        VALUES
+        (#{number}, #{name}, #{gender}, #{age}, #{dep.id})
+    </insert>
+
+    <!-- 修改员工 -->
+    <update id="update">
+        UPDATE employee
+        SET number = #{number},
+            name = #{name},
+            gender = #{gender},
+            age = #{age},
+            dep_id = #{dep.id}
+        WHERE id = #{id}
+    </update>
+
+    <!-- 按 id 删除员工 -->
+    <delete id="delete">
+        DELETE FROM employee WHERE id = #{id}
+    </delete>
+
+    <!-- 按部门批量更新：把指定部门下的员工部门关联清空 -->
+    <update id="updateByDep">
+        UPDATE employee SET dep_id = NULL WHERE dep_id = #{depId}
+    </update>
+
+</mapper>

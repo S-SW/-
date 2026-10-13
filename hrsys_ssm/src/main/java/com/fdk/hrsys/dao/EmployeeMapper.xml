@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.fdk.hrsys.dao.EmployeeDao">
+
+    <!-- 嵌套 Department 的 resultMap -->
+    <resultMap id="employeeWithDeptMap" type="com.fdk.hrsys.entity.Employee">
+        <id property="id" column="id"/>
+        <result property="number" column="number"/>
+        <result property="name" column="name"/>
+        <result property="gender" column="gender"/>
+        <result property="age" column="age"/>
+
+        <association property="dep" javaType="com.fdk.hrsys.entity.Department">
+            <id property="id" column="did"/>
+            <result property="name" column="dname"/>
+            <result property="number" column="dnumber"/>
+        </association>
+    </resultMap>
+
+    <select id="search" resultMap="employeeWithDeptMap">
+        SELECT
+        e.id, e.number, e.name, e.gender, e.age,
+        d.id     AS did,
+        d.name   AS dname,
+        d.number AS dnumber
+        FROM employee e
+        LEFT JOIN department d ON e.dep = d.id
+    </select>
+
+    <!-- 新增员工（dep 是对象，取 dep.id） -->
+    <insert id="add" parameterType="com.fdk.hrsys.entity.Employee"
+            useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO employee (number, name, gender, age, dep)
+        VALUES (#{number}, #{name}, #{gender}, #{age}, #{dep.id})
+    </insert>
+
+</mapper>
