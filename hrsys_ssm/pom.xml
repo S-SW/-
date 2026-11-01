@@ -36,6 +36,13 @@
             <version>2.2.2</version>
         </dependency>
 
+        <!-- Swagger 在线接口文档 (springdoc-openapi，兼容 Spring Boot 2.6 + Java 8) -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.6.15</version>
+        </dependency>
+
         <!-- MySQL 驱动 -->
         <dependency>
             <groupId>com.mysql</groupId>

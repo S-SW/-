@@ -1,0 +1,135 @@
+2026-11-01 13:25:12.365 [restartedMain] INFO  com.fdk.hrsys.HrsysSsmApplication - Starting HrsysSsmApplication using Java 1.8.0_172 on NAHK with PID 19116 (H:\A-java\demo24Bfdk\hrsys_ssm\target\classes started by NAHK in H:\A-java\demo24Bfdk\hrsys_ssm)
+2026-11-01 13:25:12.366 [restartedMain] INFO  com.fdk.hrsys.HrsysSsmApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-01 13:25:12.411 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-11-01 13:25:12.412 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-11-01 13:25:14.464 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-11-01 13:25:14.474 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-11-01 13:25:14.475 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-01 13:25:14.475 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2026-11-01 13:25:14.593 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-01 13:25:14.593 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2180 ms
+2026-11-01 13:25:14.671 [restartedMain] DEBUG com.zaxxer.hikari.HikariConfig - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@412635ec
+2026-11-01 13:25:15.643 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-11-01 13:25:15.655 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-11-01 13:25:15.675 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-11-01 13:25:15.685 [restartedMain] INFO  com.fdk.hrsys.HrsysSsmApplication - Started HrsysSsmApplication in 3.749 seconds (JVM running for 4.27)
+2026-11-01 13:26:26.066 [http-nio-8080-exec-7] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-01 13:26:26.067 [http-nio-8080-exec-7] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-01 13:26:26.067 [http-nio-8080-exec-7] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-11-01 13:26:26.119 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - HrsysHikari - configuration:
+2026-11-01 13:26:26.121 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension................................false
+2026-11-01 13:26:26.121 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit................................true
+2026-11-01 13:26:26.122 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - catalog................................none
+2026-11-01 13:26:26.122 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql................................none
+2026-11-01 13:26:26.122 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery................................none
+2026-11-01 13:26:26.122 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout................................30000
+2026-11-01 13:26:26.122 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - dataSource................................none
+2026-11-01 13:26:26.122 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName................................none
+2026-11-01 13:26:26.122 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI................................none
+2026-11-01 13:26:26.123 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties................................{password=<masked>}
+2026-11-01 13:26:26.123 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................................"com.mysql.cj.jdbc.Driver"
+2026-11-01 13:26:26.123 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName................................none
+2026-11-01 13:26:26.123 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties................................{}
+2026-11-01 13:26:26.123 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry................................none
+2026-11-01 13:26:26.123 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout................................600000
+2026-11-01 13:26:26.123 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout................................1
+2026-11-01 13:26:26.123 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries................................false
+2026-11-01 13:26:26.123 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl................................jdbc:mysql://localhost:3306/yjsyy?serverTimezone=UTC&characterEncoding=UTF-8
+2026-11-01 13:26:26.123 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - keepaliveTime................................0
+2026-11-01 13:26:26.124 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold................................0
+2026-11-01 13:26:26.124 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime................................1800000
+2026-11-01 13:26:26.124 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize................................10
+2026-11-01 13:26:26.124 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry................................none
+2026-11-01 13:26:26.124 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory................................none
+2026-11-01 13:26:26.124 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle................................3
+2026-11-01 13:26:26.124 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - password................................<masked>
+2026-11-01 13:26:26.124 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - poolName................................"HrsysHikari"
+2026-11-01 13:26:26.124 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - readOnly................................false
+2026-11-01 13:26:26.124 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans................................false
+2026-11-01 13:26:26.124 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor................................none
+2026-11-01 13:26:26.124 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - schema................................none
+2026-11-01 13:26:26.124 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory................................internal
+2026-11-01 13:26:26.124 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation................................default
+2026-11-01 13:26:26.124 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - username................................"root"
+2026-11-01 13:26:26.124 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout................................5000
+2026-11-01 13:26:26.124 [http-nio-8080-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HrsysHikari - Starting...
+2026-11-01 13:26:27.342 [http-nio-8080-exec-7] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a2b8a37
+2026-11-01 13:26:27.344 [http-nio-8080-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HrsysHikari - Start completed.
+2026-11-01 13:26:27.380 [http-nio-8080-exec-7] INFO  com.fdk.hrsys.service.EmployeeServiceImpl - 【员工查询】条件 number=null name=null gender=null age=null，命中 11 条
+2026-11-01 13:26:27.446 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+2026-11-01 13:26:27.447 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+2026-11-01 13:26:27.463 [HrsysHikari connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Added connection com.mysql.cj.jdbc.ConnectionImpl@2cc8ac2b
+2026-11-01 13:26:27.476 [HrsysHikari connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Added connection com.mysql.cj.jdbc.ConnectionImpl@35128232
+2026-11-01 13:26:27.476 [HrsysHikari connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After adding stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:26:27.485 [http-nio-8080-exec-1] INFO  com.fdk.hrsys.service.EmployeeServiceImpl - 【员工查询】按 id=2 查询结果：Employee{id=2, number=10002, name='张伟', gender='男', age=32, dep=Department{id=2, name='测试部', number='102'}}
+2026-11-01 13:26:27.565 [http-nio-8080-exec-2] INFO  com.fdk.hrsys.service.EmployeeServiceImpl - 【员工查询】条件 number=null name=张伟 gender=null age=null，命中 1 条
+2026-11-01 13:26:27.590 [http-nio-8080-exec-4] INFO  com.fdk.hrsys.service.EmployeeServiceImpl - 【员工查询】按 id=9 查询结果：Employee{id=9, number=10009, name='张明', gender='男', age=25, dep=Department{id=2, name='测试部', number='102'}}
+2026-11-01 13:26:57.451 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:26:57.451 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:26:57.452 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:27:27.455 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:27:27.455 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:27:27.455 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:27:57.468 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:27:57.468 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:27:57.468 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:28:27.476 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:28:27.476 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:28:27.476 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:28:57.483 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:28:57.483 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:28:57.483 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:29:27.495 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:29:27.496 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:29:27.496 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:29:57.506 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:29:57.507 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:29:57.507 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:30:27.514 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:30:27.514 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:30:27.514 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:30:57.524 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:30:57.524 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:30:57.524 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:31:27.526 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:31:27.527 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:31:27.527 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:31:57.542 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:31:57.542 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:31:57.543 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:32:27.544 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:32:27.544 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:32:27.544 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:32:57.578 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:32:57.579 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:32:57.579 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:33:27.594 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:33:27.594 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:33:27.594 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:33:57.601 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:33:57.602 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:33:57.602 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:34:27.613 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:34:27.613 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:34:27.613 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:34:57.624 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:34:57.624 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:34:57.624 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:35:27.635 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:35:27.636 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:35:27.637 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:35:57.647 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:35:57.647 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:35:57.648 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:36:27.648 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:36:27.649 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:36:27.649 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:36:57.656 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:36:57.656 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:36:57.657 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:37:27.661 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:37:27.661 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:37:27.661 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
+2026-11-01 13:37:57.674 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:37:57.675 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+2026-11-01 13:37:57.675 [HrsysHikari housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HrsysHikari - Fill pool skipped, pool is at sufficient level.
